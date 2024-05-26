@@ -1,15 +1,17 @@
 # IPInfo
 
-Get IP info of a url using Rust
+Empower your IP data retrieval tasks by leveraging Rust's capabilities to effortlessly extract comprehensive IP information from URLs, enhancing efficiency and precision in data processing workflows.
 
-> [!important]
->
-> This is a simple example of get information's of website
+To Install using [crates.io](https://crates.io)
+
+```shell
+cargo install ipinfo
+```
 
 Basic usage:
 
 ```shell
-ipfinfo kremilly.com
+ipfinfo example.com
 ```
 
 Dependencies:
