@@ -1,12 +1,16 @@
 [package]
 name = "ipinfo"
+license = "MIT"
 version = "0.1.0"
 edition = "2021"
+author = ["kremilly"]
+keywords = ["ipinfo", "ip-geolocation", "geolocation", "ip"]
+description = "Empower your IP data retrieval tasks by leveraging Rust's capabilities to effortlessly extract comprehensive IP information from URLs, enhancing efficiency and precision in data processing workflows."
+repository = "https://github.com/kremilly/IPInfo"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 ipgeolocate = "0.3.6"
 regex = "1.10.4"
-reqwest = { version = "0.12.4", features = ["blocking"] }
 tokio = { version = "1.37.0", features = ["full"] }
