@@ -18,6 +18,5 @@ Dependencies:
 
 ```toml
 ipgeolocate = "0.3.6"
-regex = "1.10.4"
 tokio = { version = "1.37.0", features = ["full"] }
 ```
