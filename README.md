@@ -11,7 +11,7 @@ cargo install ipinfo-cli
 Basic usage:
 
 ```shell
-ipfinfo example.com
+ipfinfo-cli example.com
 ```
 
 Dependencies:
