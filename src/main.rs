@@ -1,11 +1,11 @@
-mod core;
+mod ipinfo;
 
 use std::{
     env,
     error::Error,
 };
 
-use crate::core::ipinfo::IPInfo;
+use crate::ipinfo::IPInfo;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn Error>> {

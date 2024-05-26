@@ -12,13 +12,6 @@ use ipgeolocate::{
     Service,
 };
 
-use whois_rust::{
-    WhoIs,
-    WhoIsLookupOptions,
-};
-
-use crate::core::download::Download;
-
 pub struct IPInfo;
 
 impl IPInfo {
@@ -48,8 +41,6 @@ impl IPInfo {
         }
 
         let service = Service::IpApi;
-        let servers_file = Download::download(cwd).await?;
-        let whois = WhoIs::from_path(servers_file).unwrap();
 
         match Self::get_ip_address(hostname) {
             Ok(ip_domain) => {
@@ -60,12 +51,6 @@ impl IPInfo {
                         println!("Region: {} - {} ({})", ip.city, ip.region, ip.country);
                         println!("ISP: {}", ip.isp);
                         println!("Timezone: {}", ip.timezone);
-
-                        let result = whois.lookup(
-                            WhoIsLookupOptions::from_string(hostname).unwrap()
-                        ).unwrap();
-
-                        println!("Whois: \n{}", result);
                     },
 
                     Err(error) => println!("Error: {}", error),
