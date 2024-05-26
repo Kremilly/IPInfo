@@ -5,7 +5,7 @@ Empower your IP data retrieval tasks by leveraging Rust's capabilities to effort
 To Install using [crates.io](https://crates.io)
 
 ```shell
-cargo install ipinfo
+cargo install ipinfo-cli
 ```
 
 Basic usage:
