@@ -1,4 +1,4 @@
-# IPX ![img](https://img.shields.io/crates/v/ipx?style=flat-square&logo=rust) ![img](https://img.shields.io/crates/l/ipinfo-cli?style=flat-square)
+# IPX ![img](https://img.shields.io/crates/v/ipx?style=flat-square&logo=rust) ![img](https://img.shields.io/crates/l/ipx?style=flat-square)
 
 Empower your IP data retrieval tasks by leveraging Rust's capabilities to effortlessly extract comprehensive IP information from URLs, enhancing efficiency and precision in data processing workflows.
 
